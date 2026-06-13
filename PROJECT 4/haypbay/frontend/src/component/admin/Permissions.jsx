@@ -3,7 +3,7 @@ import DataTable from "react-data-table-component";
 import api from "../../api/axios";
 import { useStore } from "../../context/StoreContext";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./permissions.css";
+import "./Permissions.css";
 
 const PERM_API = "/api/permissions";
 
