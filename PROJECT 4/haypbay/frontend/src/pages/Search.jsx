@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "../api/axios";
-import "./search.css";
+import "./Search.css";
 
 const useQuery = () => {
   return new URLSearchParams(useLocation().search);
