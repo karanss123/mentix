@@ -19,7 +19,7 @@ const Contact = () => {
     subject: "",
     message: "",
   });
-const backendUrl = "http://localhost:4000";
+const backendUrl = "https://mentix-cg1j.onrender.com";
   const [store, setStore] = useState(null);
 
   const [loading, setLoading] = useState(false);
@@ -45,7 +45,7 @@ const backendUrl = "http://localhost:4000";
         const token = localStorage.getItem("token");
 
         const { data } = await axios.get(
-          "http://localhost:4000/api/stores/current",
+          "https://mentix-cg1j.onrender.com/api/stores/current",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -100,7 +100,7 @@ const backendUrl = "http://localhost:4000";
       };
 
       const res = await axios.post(
-        "http://localhost:4000/api/contact/send",
+        "https://mentix-cg1j.onrender.com/api/contact/send",
         payload
       );
 

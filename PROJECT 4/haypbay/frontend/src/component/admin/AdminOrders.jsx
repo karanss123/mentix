@@ -14,7 +14,7 @@ const AdminOrders = () => {
         const token = localStorage.getItem("token");
         const store = JSON.parse(localStorage.getItem("activeStore") || "null");
 
-        const { data } = await axios.get("http://localhost:4000/api/orders", {
+        const { data } = await axios.get("https://mentix-cg1j.onrender.com/api/orders", {
           headers: {
             Authorization: `Bearer ${token}`,
             "x-store-id": store?._id,
@@ -42,7 +42,7 @@ const AdminOrders = () => {
       const store = JSON.parse(localStorage.getItem("activeStore") || "null");
 
       const { data } = await axios.put(
-        `http://localhost:4000/api/orders/${selectedOrder._id}/status`,
+        `https://mentix-cg1j.onrender.com/api/orders/${selectedOrder._id}/status`,
         { status: newStatus },
         {
           headers: {

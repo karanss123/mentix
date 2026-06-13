@@ -24,7 +24,7 @@ const ShopkeeperDashboard = () => {
           return;
         }
 
-        const res = await fetch("http://localhost:4000/api/shopkeeper/dashboard", {
+        const res = await fetch("https://mentix-cg1j.onrender.com/api/shopkeeper/dashboard", {
           headers: { Authorization: `Bearer ${token}` },
         });
 

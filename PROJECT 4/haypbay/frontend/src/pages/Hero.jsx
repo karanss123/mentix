@@ -5,7 +5,7 @@ import api from "../api/axios";
 
 const Hero = () => {
   const navigate = useNavigate();
-  const backendUrl = "http://localhost:4000";
+  const backendUrl = "https://mentix-cg1j.onrender.com";
   const fallbackImg = "https://picsum.photos/300/200";
 
   const [watchProduct, setwatchProduct] = useState(null);

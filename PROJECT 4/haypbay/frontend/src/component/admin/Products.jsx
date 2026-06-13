@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Products.css";
 import api from "../../api/axios"; // ✅ token + x-store-id auto
 
-const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:4000"; // ✅ for image URLs only
+const API_BASE = import.meta.env.VITE_API_URL || "https://mentix-cg1j.onrender.com"; // ✅ for image URLs only
 
 const ProductManager = () => {
   const { activeStore } = useStore(); // ✅ NEW

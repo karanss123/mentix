@@ -61,7 +61,7 @@ const Search = () => {
               {/* IMAGE */}
               <div className="search-img">
                 <img
-                  src={`http://localhost:4000/uploads/${p.images?.[0]}`}
+                  src={`https://mentix-cg1j.onrender.com/uploads/${p.images?.[0]}`}
                   alt={p.name}
                 />
               </div>

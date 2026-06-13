@@ -76,7 +76,7 @@ const CheckoutPage = () => {
       }
 
       await axios.post(
-        "http://localhost:4000/api/orders",
+        "https://mentix-cg1j.onrender.com/api/orders",
         {
           items: cleanItems,
           shippingAddress: form,

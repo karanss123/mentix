@@ -3,7 +3,7 @@
 // ===============================
 
 // ✅ Base API (without trailing slash)
-const API_ROOT = import.meta?.env?.VITE_API_URL || "http://localhost:4000";
+const API_ROOT = import.meta?.env?.VITE_API_URL || "https://mentix-cg1j.onrender.com";
 
 // ✅ Auth endpoints base
 const AUTH_BASE_URL = `${API_ROOT}/api/auth`;

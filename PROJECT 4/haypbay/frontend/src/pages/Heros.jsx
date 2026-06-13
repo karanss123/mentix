@@ -15,7 +15,7 @@ const FeaturedSection = () => {
 
         if (!storeId) return;
 
-        const res = await axios.get(`http://localhost:4000/api/products/home/${storeId}`);
+        const res = await axios.get(`https://mentix-cg1j.onrender.com/api/products/home/${storeId}`);
         const products = Array.isArray(res.data) ? res.data : [];
 
         const productsWithImages = products.filter(
@@ -27,7 +27,7 @@ const FeaturedSection = () => {
         const randomProduct =
           productsWithImages[Math.floor(Math.random() * productsWithImages.length)];
 
-        setBannerImage(`http://localhost:4000/uploads/${randomProduct.images[0]}`);
+        setBannerImage(`https://mentix-cg1j.onrender.com/uploads/${randomProduct.images[0]}`);
         setBannerTitle(randomProduct.name || "Featured Collection");
         setBannerText(
           randomProduct.description || "Discover premium fashion and streetwear"

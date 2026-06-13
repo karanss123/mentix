@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:4000";
+const API = import.meta.env.VITE_API_URL || "https://mentix-cg1j.onrender.com";
 
 const api = axios.create({
   baseURL: API,

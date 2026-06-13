@@ -4,7 +4,7 @@ import axios from "axios";
 import { useCart } from "../context/CartContext";
 import "./Products.css";
 
-const API_BASE_URL = "http://localhost:4000";
+const API_BASE_URL = "https://mentix-cg1j.onrender.com";
 const FALLBACK_MAIN = "https://picsum.photos/700";
 const FALLBACK_CARD = "https://picsum.photos/400";
 const FALLBACK_THUMB = "https://picsum.photos/200";
