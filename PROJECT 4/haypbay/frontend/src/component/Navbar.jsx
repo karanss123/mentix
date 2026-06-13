@@ -9,7 +9,7 @@ import {
   FaBoxOpen,
 } from "react-icons/fa";
 import { useCart } from "../context/CartContext";
-import "./navbar.css";
+import "./Navbar.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
