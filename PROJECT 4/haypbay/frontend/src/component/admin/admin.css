@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Height of Bootstrap fixed navbar */
+:root {
+  --navbar-height: 56px;
+}
+
+/* ✅ Main admin layout (GREY हटाया) */
+.admin-container {
+  display: flex;
+  height: calc(100vh - var(--navbar-height));
+  margin-top: var(--navbar-height);
+  background-color: #ffffff; /* ✅ was #f4f6f8 */
+}
+
+/* ✅ Optional: overall page background also white */
+body {
+  background: #ffffff;
+}
+
+/* Sidebar container */
+.sidebar {
+  width: 220px;
+  height: 100vh; /* full viewport height */
+  background-color: #243646; /* dark blue/gray */
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  /* ✅ Optional: clean separation line */
+  border-right: 1px solid #e9ecef;
+}
+
+/* Sidebar title */
+.sidebar-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 30px;
+  user-select: none;
+}
+
+/* Menu list */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Links inside list items */
+.sidebar-menu li a {
+  display: inline-block;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect for links */
+.sidebar-menu li a:hover {
+  background-color: #2ac1b5;
+  color: white;
+}
+
+/* Active link style */
+.sidebar-menu li a.active {
+  background-color: #2ac1b5;
+  color: white;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
+}
+
+.roles-page {
+  padding: 20px;
+}
+
+.roles-page h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.role-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.role-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: #009688;
+  color: white;
+}
+
+.btn.grey {
+  background: #607d8b;
+  color: white;
+}
+
+.btn.edit {
+  background: #ffc107;
+  margin-right: 8px;
+}
+
+.btn.delete {
+  background: #f44336;
+  color: white;
+}
+
+.role-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.role-table th,
+.role-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+/* footer bottom */
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.store-label {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+.store-select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.store-badge {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 14px;
+}
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar already apni width lega */
+
+.admin-content {
+  flex: 1;   /* pura remaining width le */
+}
+
+.admin-main {
+  padding: 80px 24px 24px 24px; /* navbar space */
+  width: 100%;                 /* full width */
+  max-width: 100%;             /* IMPORTANT */
+}
+.products-page {
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+
+.product-table thead th {
+  text-align: left;
+  padding: 16px 14px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.product-table tbody td {
+  padding: 16px 14px;
+  font-size: 15px;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle;
+}
+
+.product-table tbody tr:hover {
+  background: #fafafa;
+}

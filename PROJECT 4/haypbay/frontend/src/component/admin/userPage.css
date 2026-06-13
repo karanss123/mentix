@@ -1,0 +1,15 @@
+.btn-blue {
+  background-color: #007BFF;   /* Blue color */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 6px;           /* Buttons ke beech thoda gap */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;   /* Darker blue on hover */
+}

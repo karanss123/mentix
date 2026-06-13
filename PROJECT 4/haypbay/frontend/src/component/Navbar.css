@@ -1,0 +1,185 @@
+/* MAIN NAVBAR */
+.custom-navbar {
+  background: white;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+/* TOP BAR */
+.nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+/* 🔍 SEARCH (ANIMATED VERSION) */
+.nav-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Input hidden by default */
+.nav-search input {
+  width: 0;
+  opacity: 0;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+
+/* Expand animation */
+.nav-search:hover input,
+.nav-search input:focus {
+  width: 200px;
+  opacity: 1;
+  margin-right: 8px;
+}
+
+/* Search button */
+.search-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.nav-logo a {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+}
+
+/* RIGHT ICON AREA */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* ICON BUTTONS */
+.icon-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect */
+.icon-btn:hover {
+  color: #ff6600;
+  transform: scale(1.15);
+}
+
+/* CART ICON */
+.cart-icon {
+  position: relative;
+}
+
+/* CART COUNT BADGE */
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  line-height: 1;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* (Optional old class support) */
+.cart-icon-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  min-width: 18px;
+  height: 18px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  padding: 2px;
+}
+
+/* MENU BAR */
+.nav-menu {
+  border-top: 1px solid #eee;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin: 0 18px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-menu a:hover {
+  color: #ff6600;
+}
+
+/* 🔥 RESPONSIVE (BONUS) */
+@media (max-width: 768px) {
+  .nav-search input {
+    display: none;
+  }
+
+  .nav-menu ul {
+    flex-wrap: wrap;
+  }
+
+  .nav-menu li {
+    margin: 5px 10px;
+  }
+}

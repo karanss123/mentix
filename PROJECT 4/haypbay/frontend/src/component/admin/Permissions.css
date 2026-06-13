@@ -1,0 +1,170 @@
+.perm-page {
+  padding: 30px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.perm-title {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #111827;
+  letter-spacing: -1px;
+}
+
+/* STORE TEXT */
+.perm-page b {
+  color: #2563eb;
+}
+
+/* CARDS */
+.perm-card,
+.perm-table-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+}
+
+.perm-card:hover,
+.perm-table-card:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* INPUTS */
+.perm-card input {
+  border-radius: 12px;
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s;
+}
+
+.perm-card input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ADD BUTTON */
+.perm-card .btn-primary {
+  border-radius: 12px;
+  font-weight: 600;
+  height: 42px;
+  transition: 0.2s ease;
+}
+
+.perm-card .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+/* KEY PILL */
+.perm-pill {
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+
+  /* ✅ FIX: stop breaking */
+  display: inline-block;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px; /* adjust 180/220 as you want */
+  vertical-align: middle;
+}
+
+/* ACTION BUTTONS */
+.perm-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.perm-actions .btn {
+  white-space: nowrap;
+  min-width: 85px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.perm-actions .btn-warning {
+  background: #facc15;
+  border: none;
+  color: #111;
+}
+
+.perm-actions .btn-warning:hover {
+  background: #eab308;
+  transform: translateY(-2px);
+}
+
+.perm-actions .btn-danger {
+  background: #ef4444;
+  border: none;
+}
+
+.perm-actions .btn-danger:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* TABLE */
+.rdt_Table {
+  border-radius: 14px !important;
+}
+
+.rdt_TableRow:hover {
+  background-color: #f3f4f6 !important;
+  transition: 0.2s;
+}
+
+/* BADGE */
+.badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 50px;
+}
+
+/* MODAL */
+.perm-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+
+.perm-modal {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 18px;
+  width: 440px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.rdt_TableCell {
+  overflow: hidden;
+}
