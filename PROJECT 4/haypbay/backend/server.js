@@ -33,10 +33,7 @@ const app = express();
 ========================= */
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://mentix-one.vercel.app",
-    ],
+    origin: true,
     credentials: true,
   })
 );
