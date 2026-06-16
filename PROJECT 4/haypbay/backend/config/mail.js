@@ -1,13 +1,20 @@
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: "karanss1114@gmail.com",
-    pass: "yyksjbgdsmvbaujw",
-  },
-});
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
+  requireTLS: true,
 
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+
+  connectionTimeout: 60000,
+  greetingTimeout: 60000,
+  socketTimeout: 60000,
+});
 transporter.verify((error, success) => {
   if (error) console.log("Mail Error:", error);
   else console.log("Mail server ready ✅");
@@ -22,10 +29,4 @@ export const sendOTP = async (email, otp) => {
   });
 };
 
-transporter.verify((error, success) => {
-  if (error) {
-    console.log("SMTP VERIFY ERROR:", error);
-  } else {
-    console.log("SMTP READY ✅");
-  }
-});
+
