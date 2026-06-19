@@ -175,7 +175,7 @@ const Navbar = () => {
             <li><Link to="/category/shoes">SHOES</Link></li>
             
             <li><Link to="/contact">CONTACT</Link></li>
-            <li><Link to="/contact">karan</Link></li>
+        
           </ul>
         </div>
       )}
