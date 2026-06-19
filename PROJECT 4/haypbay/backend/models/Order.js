@@ -2,17 +2,8 @@ import mongoose from "mongoose";
 
 const orderSchema = mongoose.Schema(
   {
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-      required: true,
-    },
-
-    storeId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Store",
-      required: true,
-    },
+    user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+    storeId: { type: mongoose.Schema.Types.ObjectId, ref: "Store", required: true },
 
     orderItems: [
       {
@@ -33,8 +24,6 @@ const orderSchema = mongoose.Schema(
       pincode: String,
     },
 
-    /* ================= PAYMENT ================= */
-
     paymentMethod: {
       type: String,
       enum: ["COD", "ONLINE"],
@@ -47,28 +36,17 @@ const orderSchema = mongoose.Schema(
       default: "pending",
     },
 
-    isPaid: {
-      type: Boolean,
-      default: false,
-    },
-
-    paidAt: {
-      type: Date,
-    },
-
-    paymentId: {
-      type: String,
-    },
-
-    /* ================= PRICE ================= */
+    isPaid: { type: Boolean, default: false },
+    paidAt: { type: Date },
+    paymentId: { type: String },
+    razorpayOrderId: { type: String },
+    razorpaySignature: { type: String },
 
     itemsPrice: Number,
     gstAmount: Number,
     platformFee: Number,
     deliveryFee: Number,
     totalPrice: Number,
-
-    /* ================= ORDER STATUS ================= */
 
     status: {
       type: String,
