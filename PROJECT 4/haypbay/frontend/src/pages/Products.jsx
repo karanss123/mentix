@@ -57,9 +57,9 @@ const Products = () => {
         ]);
 
         setNewArrivals(Array.isArray(newRes.data) ? newRes.data.slice(0, 3) : []);
-        setWatchProducts(Array.isArray(watchRes.data) ? watchRes.data : []);
-        setShirtProducts(Array.isArray(shirtRes.data) ? shirtRes.data : []);
-        setShoesProducts(Array.isArray(shoesRes.data) ? shoesRes.data : []);
+        setWatchProducts(Array.isArray(watchRes.data) ? watchRes.data.slice(0,3) : []);
+        setShirtProducts(Array.isArray(shirtRes.data) ? shirtRes.data.slice(0,3) : []);
+        setShoesProducts(Array.isArray(shoesRes.data) ? shoesRes.data.slice(0,3) : []);
       } catch (error) {
         console.error("Product fetch error:", error);
       } finally {
