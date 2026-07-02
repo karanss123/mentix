@@ -112,7 +112,7 @@ const Products = () => {
 
         <div className="product-info">
           <h3>{p.name}</h3>
-          <p className="price">₹{p.price}</p>
+          <p className="price">Rs. {p.price}</p>
 
           <div className="product-buttons">
             <button className="view-btn" onClick={() => handleViewMore(p._id)}>
